@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+}
+a {
+  /*Alle Links sollen schwarz werden*/
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+#hauptmenu {
+  display: none;
+}
+
+#hauptmenu.show {
+  display: block;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 4rem;
+  text-align: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: fixed;
+}
+
+#intro {
+  background-image: url("img/intro.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro h1,
+#intro p {
+  color: white;
+}
+
+#intro p {
+  margin-bottom: 50px;
+}
+
+.knopf {
+  color: #374a67;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  border-color: #374a67;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 1s;
+}
+.knopf:hover {
+  color: #fff;
+  background-color: #374a67;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+}
+
+.card a {
+  text-transform: none;
+  font-weight: unset;
+}
+
+.card p a {
+  color: #828282;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+}
+
+.card {
+  text-align: center;
+  margin: 0.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card .knopf {
+  color: #fff;
+  background-color: #374a67;
+  display: block;
+  margin: 1rem;
+}
+
+.card .knopf:hover {
+  color: #374a67;
+  background-color: #fff;
+}
+
+#rezepte {
+  text-align: center;
+}
+
+form button {
+  display: block;
+}
+
+#newsletter {
+  background: #04122b;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem;
+}
+
+#newsletter form {
+  display: flex;
+  justify-content: center;
+}
+
+#social-menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+#rechtliches {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+#social-menu li {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  button {
+    display: none;
+  }
+
+  #hauptmenu {
+    display: block;
+  }
+  #hauptmenu ul {
+    display: flex;
+  }
+
+  #hauptmenu li {
+    margin-left: 20px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  #rechtliches ul {
+    display: flex;
+  }
+
+  #rechtliches li {
+    margin: 1rem;
+  }
+}
